@@ -6,4 +6,4 @@ Alt-# Static Comp 2
 
 
 ## Final Project 
-![img][Images/ss.png]
+![alt text](Images/ss.png)
