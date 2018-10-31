@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Static Comp 2</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <button></button>
+        <div class="top-search"><i class="fas fa-bars"></i></div>
+        <input class="search-input" type="text" name="search-input" placeholder="Search for a job, task or resume">
+        <input class="search-input small" type="text" name="search-input" placeholder="Search">
+        <button class="hidden-button"><img class="header-icons" src="images/new-user-grey.svg" alt="new user icon"></button>
+        <button class="hidden-button"></button>
+        <button class="hidden-button"></button>
+      </nav>
+      <section class="page-title">
+        <h1>Ski Bum</h1>
+        <p class="location-name">
+          <img class="title-icon" src="images/location-darkgrey.svg" alt="location icon">
+          Crested Butte, CO ᛫ <a href="link">Preview this post</a>
+        </p>
+      </section>
+      <section class="open-section">
+        <button class="open-button first-open">
+          <img class="open-icon" alt="green icon">
+          OPEN
+        </button>
+        <button class="open-button"></button>
+        <button class="open-button"></button>
+        <button class="open-button last"></button>
+      </section>
+      <nav class="content-nav">
+        <a href="">SUMMARY</a>
+        <a href="">APPLICANTS</a>
+        <a class="small-hide-nav" href="">JOB BOARD</a>
+        <a class="hide-nav" href="">INTERVIEWS</a>
+        <a class="hide-nav" href="">ACTIVITY</a>
+        <a class="hide-nav" href="">BROADCAST</a>
+        <a class="hide-nav" href="">NOTIFICATIONS</a>
+        <img class="more-options" src="images/carrot.svg">
+      </nav>
+    </header>
+    <nav class="sidebar">
+      <figure class="user-img">
+        <img src="Images/skibum.jpg" alt="Super handsome gentleman, kinda like drew carey but fatter photo">
+        <figcaption>Timothy Miller</figcaption>
+      </figure>
+      <table class="sidebar-tables">
+        <th>Main</th>
+        <tr>
+          <td>Home</td>
+        </tr>
+        <tr>
+          <td>JOBS</td>
+        </tr>
+        <tr>
+          <td>RESUMES</td>
+        </tr>
+        <tr>
+          <td>TASKS</td>
+        </tr>
+        <tr>
+          <td>CALENDAR</td>
+        </tr>
+      </table>
+      <table class="sidebar-tables">
+        <th>Admin</th>
+        <tr>
+          <td>USERS</td>
+        </tr>
+        <tr>
+          <td>LOCATIONS</td>
+        </tr>
+        <tr>
+          <td>WORKFLOWS</td>
+        </tr>
+        <tr>
+          <td>JOB BOARDS</td>
+        </tr>
+        <tr>
+          <td>SOCIAL</td>
+        </tr>
+      </table>
+      <table class="sidebar-tables">
+        <th>Categories</th>
+        <tr>
+          <td>Administrative</td>
+        </tr>
+        <tr>
+          <td>Design</td>
+        </tr>
+        <tr>
+          <td>Executive</td>
+        </tr>
+        <tr>
+          <td>Human Resources</td>
+        </tr>
+      </table>
+    </nav>
+    <main>
+      <article class="graphs">
+        <section class="circle-graphs">
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circle-chart one">
+              <path class="circle-big"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+              stroke-dasharray="30, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="20.35" class="lg-circle-text">3,448</text>
+              <text x="18" y="25" class="sml-circle-text">Applicants</text>
+            </svg>
+          </div>
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circle-chart two">
+              <path class="circle-big"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+              stroke-dasharray="60, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="20.35" class="lg-circle-text">2,595</text>
+              <text x="18" y="25" class="sml-circle-text">Interviews</text>
+            </svg>
+          </div>
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circle-chart three">
+              <path class="circle-big"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+              stroke-dasharray="65, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="20.35" class="lg-circle-text">943</text>
+              <text x="18" y="25" class="sml-circle-text">Forwards</text>
+            </svg>
+          </div>           
+        </section>
+        <section class="bar-graph">
+          <figure>
+            <img class="bar-graph-img" src="images/bar-graph.png" alt="bar graph">
+          </figure>
+        </section>
+        <!-- <section class="graph-buttons-container"> -->
+        <button class="graph-buttons circle">TOTALS ᛫ Out of 5,231 views</button>
+        <button class="graph-buttons bar">APPLICANTS/DAY</button>
+        </section>
+      </article>
+      <table class=job-details>
+        <th colspan="2">JOB DESCRIPTION</th>
+        <tr></tr>
+          <td class="bold-td">POSITION TITLE</td>
+          <td>Ski Bum Representative</td>
+        <tr>
+          <td class="bold-td">LOCATION</td>
+          <td>Wherever Town, USA</td>
+        </tr>
+        <tr>
+          <td class="bold-td">EMPLOYMENT TYPE</td>
+          <td>Seasonal</td>
+        </tr>
+        <tr>
+          <td class="bold-td">EXPERIENCE</td>
+          <td>Below Entry Level</td>
+        </tr>
+        <tr>
+          <td class="bold-td">STATUS</td>
+          <td>Forever Open</td>
+        </tr>
+        <tr>
+          <td class="bold-td">DESCRIPTION</td>
+          <td>Ski bumming is a way of life. It’s the pursuit of skiing and snowboarding as much as you possibly can while enjoying the ski town lifestyle. Ski bum jobs allow you to work hard, play hard, and ski harder</td>
+        </tr>
+        <tr>
+          <td class="bold-td">HIRING LEAD</td>
+          <td>Dead Head Ed</td>
+        </tr>
+        <tr class="last-row">
+          <td class="bold-td">APPROVED SALARY</td>
+          <td>$5,000</td>
+        </tr>
+      </table>
+      <aside>
+        <button class="post-buttons facebook"><img src="images/facebook.svg" alt="facebook icon">Post to Facebook</button>
+        <button class="post-buttons twitter"><img src="images/twitter.svg" alt="twitter icon">Tweet this Job</button>
+        <button class="post-buttons linkedin"><img src="images/linkedin.svg" alt="linked in icon">Post to Linkedin</button>
+        <form>
+          <h2><img class="aside-icons" src="images/world.svg" alt="world icon">Link to this Job</h2>
+          <label>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.</label>
+          <div class="copy-wrapper">
+            <input class="copy-link"type="website" name="linkJobURL" placeholder="http://loremipsum.dol/sit amet...">
+            <button class="copy-button">Copy</button>
+          </div>
+        </form>
+        <form>
+          <h2><img class="aside-icons" src="images/button-widget.svg" alt="widget icon">Use the Button Widget</h2>
+          <label>This widget embeds the buttons for sharing the job for submitting a resume on your website.</label>
+          <div class="copy-wrapper">
+            <input class="copy-link" type="text" name="buttonWidget" placeholder="<script type=&quot;text/javascript&quot; s...">
+            <button class="copy-button">Copy</button>
+          </div>
+        </form>
+        <form>
+          <h2><img class="aside-icons" src="images/paper-plane.svg" alt="plane icon">Upload Resumes by Email</h2>
+          <label>You can automatically upload multiple resumes to this job by emailing the address below.</label>
+          <input class="email-input" type="email" name="email" placeholder="tomtizzy@gmail.com">
+        </form>
+      </aside>
+    </main>
+  </body>
