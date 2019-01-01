@@ -1,231 +1,236 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Static Comp 2</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link rel="stylesheet" href="normalize.css">
+    <title>Jobs For All</title>
+    <link rel="shortcut icon" type="image/png" href="Images/ski"/>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
-      <nav class="nav-bar">
-        <button></button>
-        <div class="top-search"><i class="fas fa-bars"></i></div>
-        <input class="search-input" type="text" name="search-input" placeholder="Search for a job, task or resume">
-        <input class="search-input small" type="text" name="search-input" placeholder="Search">
-        <button class="hidden-button"><img class="header-icons" src="images/new-user-grey.svg" alt="new user icon"></button>
-        <button class="hidden-button"></button>
-        <button class="hidden-button"></button>
-      </nav>
-      <section class="page-title">
-        <h1>Ski Bum</h1>
-        <p class="location-name">
-          <img class="title-icon" src="images/location-darkgrey.svg" alt="location icon">
-          Crested Butte, CO ᛫ <a href="link">Preview this post</a>
-        </p>
-      </section>
-      <section class="open-section">
-        <button class="open-button first-open">
-          <img class="open-icon" alt="green icon">
-          OPEN
-        </button>
-        <button class="open-button"></button>
-        <button class="open-button"></button>
-        <button class="open-button last"></button>
-      </section>
-      <nav class="content-nav">
-        <a href="">SUMMARY</a>
-        <a href="">APPLICANTS</a>
-        <a class="small-hide-nav" href="">JOB BOARD</a>
-        <a class="hide-nav" href="">INTERVIEWS</a>
-        <a class="hide-nav" href="">ACTIVITY</a>
-        <a class="hide-nav" href="">BROADCAST</a>
-        <a class="hide-nav" href="">NOTIFICATIONS</a>
-        <img class="more-options" src="images/carrot.svg">
-      </nav>
+      <button class="head-nav-pop-icons head-nav-icon">
+        <span class="fas fa-caret-left"></span><span class="fas fa-bars"></span>
+      </button>
+      <form class="nav-search">
+        <span class="fas fa-search"></span>
+        <input type="search" autocomplete="on" placeholder="Search" class="search-bar"> 
+      </form>
+      <button class="head-nav-icon icon2">
+        <span class="fas fa-user-plus fa-sm"></span>
+      </button>
+      <button class="head-nav-icon icon3">
+        <span class="fas fa-clipboard-check"></span>
+      </button>
+      <button class="head-nav-icon icon4">
+        <span class="fas fa-th fa-sm"><span>
+      </button>
     </header>
-    <nav class="sidebar">
-      <figure class="user-img">
-        <img src="Images/skibum.jpg" alt="Super handsome gentleman, kinda like drew carey but fatter photo">
-        <figcaption>Timothy Miller</figcaption>
-      </figure>
-      <table class="sidebar-tables">
-        <th>Main</th>
-        <tr>
-          <td>Home</td>
-        </tr>
-        <tr>
-          <td>JOBS</td>
-        </tr>
-        <tr>
-          <td>RESUMES</td>
-        </tr>
-        <tr>
-          <td>TASKS</td>
-        </tr>
-        <tr>
-          <td>CALENDAR</td>
-        </tr>
-      </table>
-      <table class="sidebar-tables">
-        <th>Admin</th>
-        <tr>
-          <td>USERS</td>
-        </tr>
-        <tr>
-          <td>LOCATIONS</td>
-        </tr>
-        <tr>
-          <td>WORKFLOWS</td>
-        </tr>
-        <tr>
-          <td>JOB BOARDS</td>
-        </tr>
-        <tr>
-          <td>SOCIAL</td>
-        </tr>
-      </table>
-      <table class="sidebar-tables">
-        <th>Categories</th>
-        <tr>
-          <td>Administrative</td>
-        </tr>
-        <tr>
-          <td>Design</td>
-        </tr>
-        <tr>
-          <td>Executive</td>
-        </tr>
-        <tr>
-          <td>Human Resources</td>
-        </tr>
-      </table>
+    <nav class="header-nav">
+      <section class="main-head-title">  
+        <div class="title">
+          <h1>Aspiring Ski Bum</h1>
+          <p><span class="fas fa-map-marker"></span><span class="location"> Crested Butte, CO</span><span class="fas fa-circle small-dot"></span><span class="preview-link">Preview this post</span></p>
+        </div> 
+        <div class="buttons">
+          <button class="open-button">
+            <span class="fas fa-circle"></span>open
+          </button>
+          <button class="nav-buttons ">
+            <span class="fas fa-bookmark"></span>
+          </button>
+          <button class="nav-buttons ">
+            <span class="fas fa-pencil-alt"></span>
+          </button>
+          <button class="nav-buttons ">
+            <span class="far fa-trash-alt"></span>
+          </button>
+        </div>
+      </section>
+      <ul  class="main-nav">
+        <li class="small-caps-text nav-list nav-li1">summary</li>
+        <li class="small-caps-text nav-list nav-li2">applicants</li>
+        <li class="small-caps-text nav-list nav-li3">job board</li>
+        <li class="small-caps-text nav-list nav-li4">interviews</li>
+        <li class="small-caps-text nav-list nav-li5">activity</li>
+        <li class="small-caps-text nav-list nav-li6">broadcast</li>
+        <li class="small-caps-text nav-list nav-li7">notifications</li>
+        <li class="nav-li-ellipsis"><span class="fas fa-ellipsis-h"></span></li>  
+      </ul>
     </nav>
-    <main>
-      <article class="graphs">
-        <section class="circle-graphs">
-          <div class="single-chart">
-            <svg viewBox="0 0 36 36" class="circle-chart one">
-              <path class="circle-big"
-              d="M18 2.0845
-              a 15.9155 15.9155 0 0 1 0 31.831
-              a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <path class="circle"
-              stroke-dasharray="30, 100"
-              d="M18 2.0845
-              a 15.9155 15.9155 0 0 1 0 31.831
-              a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <text x="18" y="20.35" class="lg-circle-text">3,448</text>
-              <text x="18" y="25" class="sml-circle-text">Applicants</text>
-            </svg>
+    <nav class="pop-out-nav">
+      <section class="pop-out-nav-user">
+        <img alt="User Image" src="Images/skibum.jpg" class="user-image">
+        <p class="name-text">Timothy C. Miller <span class="fas fa-chevron-down"></span></p>
+      </section>
+      <section class="pop-out-nav-main">
+        <p class="pop-out-titles">Main</p>
+        <ul>
+          <li class="pop-out-list"><span class="fas fa-home fa-xs"></span><span class="small-caps-text">home</span></li>
+          <li class="pop-out-list"><span class="fas fa-briefcase fa-xs"></span><span class="small-caps-text">jobs</span></li>
+          <li class="pop-out-list"><span class="far fa-file-alt fa-xs"></span><span class="small-caps-text">resumes</span></li>
+          <li class="pop-out-list"><span class="fas fa-clipboard-list fa-xs"></span><span class="small-caps-text">tasks</span></li>
+          <li class="pop-out-list"><span class="far fa-calendar-alt fa-xs"></span><span class="small-caps-text">calendar</span></li>
+        </ul>
+      </section>
+      <section class="pop-out-nav-admin">
+        <p class="pop-out-titles">Admin</p>
+        <ul>
+          <li class="pop-out-list"><span class="fas fa-user-friends fa-xs"></span><span class="small-caps-text">users</span></li>
+          <li class="pop-out-list"><span class="fas fa-map-marker-alt fa-xs"></span><span class="small-caps-text">locations</span></li>
+          <li class="pop-out-list"><span class="fas fa-sitemap fa-xs"></span><span class="small-caps-text">workflows</span></li>
+          <li class="pop-out-list"><span class="far fa-window-restore fa-xs"></span><span class="small-caps-text">job boards</span></li>
+          <li class="pop-out-list"><span class="fas fa-share-alt fa-xs"></span><span class="small-caps-text">social</span></li>
+        </ul>
+      </section>
+      <section class="pop-out-nav-cat">
+        <p class="pop-out-titles">Categories</p>
+        <div class="checkbox">
+          <input type="checkbox" id="admin-checkbox">
+          <label for="admin-checkbox" class="pop-out-cat-text">Administrative</label>
+        </div>
+        <div class="checkbox checkbox-design">
+          <input type="checkbox" id="design-checkbox">
+          <label for="design-checkbox" class="pop-out-cat-text">Design</label>
+        </div>
+        <div class="checkbox checkbox-exec">
+          <input type="checkbox" id="exec-checkbox">
+          <label for="exec-checkbox" class="pop-out-cat-text">Executive</label>
+        </div>
+        <div class="checkbox checkbox-hr">
+          <input type="checkbox" id="hr-checkbox">
+          <label for="hr-checkbox" class="pop-out-cat-text">Human Resources</label>
+        </div>
+      </section>
+    </nav>
+    <section class="graph-sect">
+      <article class="circle-graphs-art">  
+        <section class="circle-graphs-sect">
+          <div class="circ-graph applicant-graph">
+            <p class="graph-num">3,154</p>
+            <p class="small-caps-text graph-text">applicants</p>
           </div>
-          <div class="single-chart">
-            <svg viewBox="0 0 36 36" class="circle-chart two">
-              <path class="circle-big"
-              d="M18 2.0845
-              a 15.9155 15.9155 0 0 1 0 31.831
-              a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <path class="circle"
-              stroke-dasharray="60, 100"
-              d="M18 2.0845
-              a 15.9155 15.9155 0 0 1 0 31.831
-              a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <text x="18" y="20.35" class="lg-circle-text">2,595</text>
-              <text x="18" y="25" class="sml-circle-text">Interviews</text>
-            </svg>
+          <div class="circ-graph interview-graph">
+            <p class="graph-num">1,546</p>
+            <p class="small-caps-text graph-text">interviews</p>
           </div>
-          <div class="single-chart">
-            <svg viewBox="0 0 36 36" class="circle-chart three">
-              <path class="circle-big"
-              d="M18 2.0845
-              a 15.9155 15.9155 0 0 1 0 31.831
-              a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <path class="circle"
-              stroke-dasharray="65, 100"
-              d="M18 2.0845
-              a 15.9155 15.9155 0 0 1 0 31.831
-              a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-              <text x="18" y="20.35" class="lg-circle-text">943</text>
-              <text x="18" y="25" class="sml-circle-text">Forwards</text>
-            </svg>
-          </div>           
+          <div class="circ-graph forward-graph">
+            <p class="graph-num">912</p>
+            <p class="small-caps-text graph-text">forwards</p>
+          </div>
         </section>
-        <section class="bar-graph">
-          <figure>
-            <img class="bar-graph-img" src="images/bar-graph.png" alt="bar graph">
-          </figure>
-        </section>
-        <!-- <section class="graph-buttons-container"> -->
-        <button class="graph-buttons circle">TOTALS ᛫ Out of 5,231 views</button>
-        <button class="graph-buttons bar">APPLICANTS/DAY</button>
+        <section>
+          <button class ="graph-button">TOTALS - Out of 5,231 views</button>
         </section>
       </article>
-      <table class=job-details>
-        <th colspan="2">JOB DESCRIPTION</th>
-        <tr></tr>
-          <td class="bold-td">POSITION TITLE</td>
-          <td>Ski Bum Representative</td>
+      <article class="bar-graph-sect">
+        <img alt="Bar Graph" src="Images/barGraph.png" class="bar-graph">
+        <button class ="graph-button small-caps-text">applicants/day</button>
+      </article>
+      <section class="border-sect">
+        <p class="border-p">
+          <span>
+            <span class="fas fa-chevron-circle-up"></span>
+            <span class="fas fa-chevron-circle-down"></span>
+          </span>
+        </p>
+      </section>
+    </section>
+    <main class="main">
+      <table>
         <tr>
-          <td class="bold-td">LOCATION</td>
-          <td>Wherever Town, USA</td>
+          <th class="small-caps-text main-th-col1">
+            job description
+          </th>
+          <th class="main-th-col2">
+            <button class="main-table-btn">
+              <span class="fas fa-pencil-alt"></span>edit
+            </button>
+          </th>
         </tr>
         <tr>
-          <td class="bold-td">EMPLOYMENT TYPE</td>
-          <td>Seasonal</td>
+          <td class="small-caps-text main-table-col1">position title</td>
+          <td class="main-table-col2">Ski Bum</td>
         </tr>
         <tr>
-          <td class="bold-td">EXPERIENCE</td>
-          <td>Below Entry Level</td>
+          <td class="small-caps-text main-table-col1">location</td>
+          <td class="main-table-col2">Crested Butte, CO</td>
         </tr>
         <tr>
-          <td class="bold-td">STATUS</td>
-          <td>Forever Open</td>
+          <td class="small-caps-text main-table-col1">employment</td>
+          <td class="main-table-col2">Full-Time ish</td>
         </tr>
         <tr>
-          <td class="bold-td">DESCRIPTION</td>
-          <td>Ski bumming is a way of life. It’s the pursuit of skiing and snowboarding as much as you possibly can while enjoying the ski town lifestyle. Ski bum jobs allow you to work hard, play hard, and ski harder</td>
+          <td class="small-caps-text main-table-col1">experience</td>
+          <td class="main-table-col2">I'd like you to have some</td>
         </tr>
         <tr>
-          <td class="bold-td">HIRING LEAD</td>
-          <td>Dead Head Ed</td>
+          <td class="small-caps-text main-table-col1">status</td>
+          <td class="main-table-col2">Open</td>
         </tr>
-        <tr class="last-row">
-          <td class="bold-td">APPROVED SALARY</td>
-          <td>$5,000</td>
+        <tr>
+          <td class="small-caps-text main-table-col1">description</td>
+          <td class="main-table-col2">
+            Ski bumming is a way of life. It’s the pursuit of skiing and snowboarding as much as you possibly can while enjoying the ski town lifestyle. Ski bum jobs allow you to work hard, play hard, and ski harder
+          </td>
+        </tr>
+        <tr>
+          <td class="small-caps-text main-table-col1">hiring lead</td>
+          <td class="main-table-col2 hiring-lead"><img class="hiring-lead-pic" src="Images/deadhead.jpg">  Dead Head Ed</td>
+        </tr>
+        <tr>
+          <td class="small-caps-text main-table-col1">approved salary</td>
+          <td class="main-table-col2">$5,000 a season</td>
         </tr>
       </table>
-      <aside>
-        <button class="post-buttons facebook"><img src="images/facebook.svg" alt="facebook icon">Post to Facebook</button>
-        <button class="post-buttons twitter"><img src="images/twitter.svg" alt="twitter icon">Tweet this Job</button>
-        <button class="post-buttons linkedin"><img src="images/linkedin.svg" alt="linked in icon">Post to Linkedin</button>
-        <form>
-          <h2><img class="aside-icons" src="images/world.svg" alt="world icon">Link to this Job</h2>
-          <label>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.</label>
-          <div class="copy-wrapper">
-            <input class="copy-link"type="website" name="linkJobURL" placeholder="http://loremipsum.dol/sit amet...">
-            <button class="copy-button">Copy</button>
-          </div>
-        </form>
-        <form>
-          <h2><img class="aside-icons" src="images/button-widget.svg" alt="widget icon">Use the Button Widget</h2>
-          <label>This widget embeds the buttons for sharing the job for submitting a resume on your website.</label>
-          <div class="copy-wrapper">
-            <input class="copy-link" type="text" name="buttonWidget" placeholder="<script type=&quot;text/javascript&quot; s...">
-            <button class="copy-button">Copy</button>
-          </div>
-        </form>
-        <form>
-          <h2><img class="aside-icons" src="images/paper-plane.svg" alt="plane icon">Upload Resumes by Email</h2>
-          <label>You can automatically upload multiple resumes to this job by emailing the address below.</label>
-          <input class="email-input" type="email" name="email" placeholder="deadheaded@gmail.com">
-        </form>
-      </aside>
     </main>
+    <aside class="aside">
+      <section class="social-media">
+        <button class="social-media-button facebook-button">
+          <span class="fab fa-facebook-f"></span> 
+          <span class="social-media-button-text">Post to Facebook</span>
+        </button>
+        <button class="social-media-button twitter-button">
+          <span class="fab fa-twitter"></span>
+          <span class="social-media-button-text">Tweet this Job</span>
+        </button>
+        <button class="social-media-button linkedin-button">
+          <span class="fab fa-linkedin-in"></span> 
+          <span class="social-media-button-text">Post to Linkedin</span>
+        </button>
+      </section>
+      <section class="link-to-job-section job-section-with-border">
+        <h2><span class="fas fa-globe-americas"></span> Link to this Job</h2>
+        <p class="very-small-text">
+          Know someone who would be good for this job? Simply click the COPY button below and send it along! They will thank you!
+        </p>
+        <article class="job-link-art">
+          <input class="link-to-job" type="" placeholder="https://tenor.com/view/morning-morning-people-vs-me-dogs-cute-gif-9559257">
+          <button class="link-to-job-button">Copy</button>
+        </article>
+      </section>
+      <section class="link-to-job-section job-section-with-border">
+        <h2><span class="far fa-save"></span> Use the Button Widget</h2>
+        <p class="very-small-text">
+          This widget embeds the butttons for sharing the job for submitting a resume on your website.
+        </p>
+        <article class="job-link-art">
+          <input class="link-to-job" type="" placeholder="<sript type='text/javasript' https://tenor.com/view/morning-morning-people-vs-me-dogs-cute-gif-9559257>">
+          <button class="link-to-job-button">Copy</button>
+        </article>
+      </section>
+      <section class="link-to-job-section job-section-bottom">
+        <h2><span class="fas fa-paper-plane"></span> Upload Resumes by Email</h2>
+        <p class="very-small-text">
+          You can automatically upload multiple resumes to this job by emailing the address below.
+        </p>
+        <article class="job-link-art">
+          <input class="link-to-job" type="email" placeholder="deadheaded@cbmr.com">
+          <button class="link-to-job-button">Send</button>
+        </article>
+      </section>
+    </aside>
   </body>
+</html>
